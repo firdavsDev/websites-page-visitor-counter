@@ -1,5 +1,3 @@
-Here's a comprehensive `README.md` for your project:
-
 # Visitor Counter API
 
 A Go (Fiber) application for tracking website visitors with Swagger documentation.
