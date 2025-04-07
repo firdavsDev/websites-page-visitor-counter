@@ -1,0 +1,31 @@
+# air.toml
+root = "."
+tmp_dir = "tmp"
+
+[build]
+  # Point to your main.go in cmd directory
+  cmd = "go build -o /app/tmp/main ./cmd/main.go"
+  bin = "/app/tmp/main"
+  full_bin = "/app/tmp/main"
+  
+  # Set the correct working directory for builds
+  full_bin = "cd /app && ./tmp/main"
+  
+  # Exclude directories
+  exclude_dir = ["tmp", "vendor", ".git", "docs"]
+  
+  # Watch these extensions
+  include_ext = ["go", "html", "tpl", "tmpl", "json"]
+  
+  # Other settings
+  delay = 1000
+  stop_on_error = true
+
+[log]
+  time = false
+
+[color]
+  main = "magenta"
+  watcher = "cyan"
+  build = "yellow"
+  runner = "green"

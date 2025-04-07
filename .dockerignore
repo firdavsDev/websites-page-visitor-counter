@@ -1,0 +1,7 @@
+.git
+.vscode
+.idea
+node_modules
+tmp
+bin
+air.log
